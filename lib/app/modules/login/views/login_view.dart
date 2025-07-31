@@ -28,9 +28,7 @@ class LoginView extends GetView<LoginController> {
                 obscureText: true,
               ),
               ElevatedButton(
-                onPressed: () {
-                  // 登录逻辑
-                },
+                onPressed: controller.login,
                 child: const Text('登录'),
               ),
             ],
