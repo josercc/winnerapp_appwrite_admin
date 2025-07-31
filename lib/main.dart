@@ -7,6 +7,7 @@ import 'package:winnerapp_appwrite_admin/common/global_server.dart';
 import 'app/routes/app_pages.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   Get.lazyPut(() => GlobalServer());
   runApp(
     GetMaterialApp(

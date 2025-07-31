@@ -13,10 +13,14 @@ class HomeView extends GetView<HomeController> {
         title: const Text('HomeView'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
+      body: Obx(
+        () => ListView.builder(
+          itemCount: controller.appZipList.length,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(controller.appZipList[index].$id),
+            );
+          },
         ),
       ),
     );

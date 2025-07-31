@@ -1,0 +1,4 @@
+enum SharedPreferenceKey {
+  userName,
+  password,
+}
